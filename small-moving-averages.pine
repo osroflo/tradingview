@@ -1,0 +1,7 @@
+//@version=5
+indicator(title="20/40/100/200 Moving Averages", shorttitle="MA", overlay=true, linktoseries=true)
+
+plot(ta.sma(close, 20), title="20 SMA", color=#FEDA15, linewidth=1, transp=0)
+plot(ta.sma(close, 40), title="40 SMA", color=#DB0000, linewidth=1, transp=0)
+plot(ta.sma(close, 100), title="100 SMA", color=#5bfc10, linewidth=1, transp=0)
+plot(ta.sma(close, 200), title="200 SMA", color=#FE15F2, linewidth=1, transp=0)
